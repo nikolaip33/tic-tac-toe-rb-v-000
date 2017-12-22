@@ -54,8 +54,8 @@ def full?(board)
   board.all? { |token| token == "X" || token == "O" }
 end
 
-def draw?(board)
-  (full? board)  and (!won? board)
+def draw? board
+  (full? board) and (!won? board)
 end
 
 def over?(board)
